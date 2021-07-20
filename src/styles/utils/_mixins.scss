@@ -1,0 +1,13 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin wrapper {
+  max-width: $maxWidthContent;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
